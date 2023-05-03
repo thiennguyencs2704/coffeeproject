@@ -1,0 +1,84 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Futura-bold";
+  height: 100vh;
+  width: 100%;
+  margin: 0 0;
+}
+
+@font-face {
+  font-family: "Ahganirya";
+  src: url(/fonts/ahganirya.ttf);
+}
+
+@font-face {
+  font-family: "Futura-medium";
+  src: url(/fonts/futura-medium.ttf);
+}
+
+@font-face {
+  font-family: "Futura-bold";
+  src: url(/fonts/futura-bold.ttf);
+}
+
+.nav {
+  width: 100%;
+  color: black;
+  height: 62px;
+}
+
+.nav-left {
+  position: absolute;
+  top: 27px;
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: "Ahganirya", sans-serif;
+}
+
+.nav-left:hover {
+  color: rgb(218, 218, 107);
+}
+
+.nav-right {
+  font-size: 15px;
+  position: absolute;
+  top: 38px;
+  right: 50px;
+  gap: 76px;
+  display: flex;
+}
+
+.nav-right > a:hover {
+  color: rgb(218, 218, 107);
+}
+
+.h-aboutus {
+  font-weight: 700;
+  font-size: 95px;
+  line-height: 126px;
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 171.7%;
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-aboutus {
+  margin: 0 0;
+  margin-top: 230px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 171.7%;
+}
