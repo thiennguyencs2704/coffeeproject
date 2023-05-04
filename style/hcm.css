@@ -373,21 +373,32 @@ label {
     width: 26px;
     float: left;
     margin: 0 0;
-    font-size: 40px;
+    font-size: 50px;
     position: relative;
-    top: 28px;
+    top: 20px;
     left: 40px;
     z-index: 10;
     font-weight: 800;
+    background-color: black;
+    color: #f3f3f3;
+    width: 65px;
+    height: 70px;
+    text-align: center;
+    justify-items: center;
+    margin: 0 auto;
   }
 
   .nav-left {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     width: 100%;
     margin-left: 0;
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 10;
+    top: 0;
   }
 
   .carousel {
@@ -398,34 +409,41 @@ label {
     left: 0;
     top: 0;
     right: 0;
-    z-index: 0;
+    z-index: 1;
   }
 
   .nav-right {
     text-align: center;
-    width: 100%;
-    display: none;
+    visibility: hidden;
     clear: right;
   }
 
-  .nav-right a {
-    display: block;
-    border-radius: 20px;
-    margin: 0;
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: black;
-    background-color: white;
+    background-color: #f3f3f3;
     opacity: 90%;
     z-index: 10;
-    /* margin-top: 500px; */
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
+    top: 82px;
+    left: 70px;
+    width: 230px;
+    height: 250px;
+    gap: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-right > a {
+    font-size: 30px;
   }
 
   #toggle:checked + .nav-right {
-    display: block;
+    visibility: visible;
   }
 
   .h-hcm {
@@ -457,11 +475,20 @@ label {
   .sub-carousel__viewport {
     width: 600px;
     height: 400px;
+    z-index: 1;
+  }
+
+  h2 {
+    margin: 10px 0;
   }
 
   .bun-rieu,
   .pho {
     justify-content: start;
     gap: 30px;
+  }
+
+  #aboutus-link {
+    display: none;
   }
 }

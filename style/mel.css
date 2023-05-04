@@ -246,7 +246,6 @@ h2 {
 .food {
   display: flex;
   justify-content: center;
-
   margin-top: 20px;
   margin-bottom: 80px;
   gap: 77px;
@@ -352,4 +351,135 @@ h2 {
 
 .fish > p {
   margin: 0 0;
+}
+
+#toggle {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 390px) {
+  label {
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    float: left;
+    margin: 0 0;
+    font-size: 50px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    z-index: 10;
+    font-weight: 800;
+    background-color: black;
+    color: #f3f3f3;
+    width: 65px;
+    height: 70px;
+    text-align: center;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    margin-left: 0;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    top: 0;
+  }
+
+  .carousel {
+    position: absolute;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    height: 622px;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .nav-right {
+    text-align: center;
+    visibility: hidden;
+    clear: right;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    background-color: #f3f3f3;
+    opacity: 90%;
+    z-index: 10;
+    position: absolute;
+    top: 82px;
+    left: 70px;
+    width: 230px;
+    height: 250px;
+    gap: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-right > a {
+    font-size: 30px;
+  }
+
+  #toggle:checked + .nav-right {
+    visibility: visible;
+  }
+
+  .h-mel {
+    margin-top: 560px;
+    font-size: 60px;
+  }
+
+  .p-mel {
+    z-index: 10;
+    font-size: 10px;
+    top: 622px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 50px;
+    text-align: center;
+    line-height: 130.2%;
+  }
+
+  .food {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sub-carousel__viewport {
+    width: 600px;
+    height: 400px;
+    z-index: 1;
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  .baker-bleu,
+  .fish {
+    justify-content: start;
+    gap: 30px;
+  }
+
+  #aboutus-link {
+    display: none;
+  }
 }

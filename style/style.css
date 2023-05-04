@@ -184,9 +184,170 @@ body {
   position: absolute;
 }
 
+#sub-toggle {
+  display: none;
+}
+
 @media screen and (min-device-width: 375px) and (max-device-width: 390px) {
+  #hamburger {
+    display: block;
+    cursor: pointer;
+    float: left;
+    width: 26px;
+    margin: 0 0;
+    font-size: 50px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    z-index: 10;
+    font-weight: 800;
+    background-color: black;
+    color: #f3f3f3;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding-bottom: 5px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nav {
+    position: relative;
+    top: 0;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    margin-left: 0;
+    font-size: 25px;
+    z-index: 10;
+    top: 0;
+    color: #f3f3f3;
+  }
+
+  .nav-right {
+    text-align: center;
+    visibility: hidden;
+    clear: right;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    background-color: #f3f3f3;
+    opacity: 90%;
+    z-index: 10;
+    position: absolute;
+    top: 82px;
+    left: 70px;
+    width: 230px;
+    height: 250px;
+    gap: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-right > a {
+    font-size: 30px;
+  }
+
   .toggle {
-    width: 390px;
-    height: 263px;
+    width: 100%;
+    height: 622px;
+    top: 0;
+    position: absolute;
+  }
+
+  #sub-toggle:checked + .nav-right {
+    visibility: visible;
+  }
+
+  .header-hcm {
+    height: 0px;
+  }
+
+  .h-hcm,
+  .h-mel {
+    top: 120px;
+    font-size: 90px;
+  }
+
+  .p-hcm,
+  .p-mel {
+    top: 150px;
+  }
+
+  .b-hcm,
+  .b-mel {
+    top: 450px;
+  }
+
+  .aboutus {
+    position: absolute;
+    top: 650px;
+  }
+
+  .h-aboutus {
+    font-weight: 700;
+    font-size: 95px;
+    line-height: 126px;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 171.7%;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-aboutus {
+    margin: 20px 80px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 130.7%;
+  }
+
+  br {
+    display: none;
+  }
+
+  .team-member {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+
+  .team-member > p {
+    margin: 20px 0;
+  }
+
+  #aboutus-link {
+    display: none;
+  }
+}
+
+@media screen and (min-device-width: 1024px) {
+  .aboutus {
+    display: none;
   }
 }
